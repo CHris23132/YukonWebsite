@@ -274,6 +274,75 @@
             100% { transform: rotate(360deg); }
         }
 
+        /* Video Section */
+        .video-section {
+            padding: 5rem 2rem;
+            background: rgba(255, 255, 255, 0.03);
+            min-height: 80vh;
+        }
+
+        .video-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .video-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .video-header h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #00d4ff, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .video-header p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+
+        .video-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-wrapper {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .video-wrapper iframe {
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+            aspect-ratio: 16/9;
+        }
+
+        /* Responsive Video */
+        @media (max-width: 768px) {
+            .video-header h2 {
+                font-size: 2rem;
+            }
+
+            .video-wrapper {
+                padding: 1rem;
+            }
+
+            .video-wrapper iframe {
+                width: 100%;
+                height: 200px;
+            }
+        }
+
         /* Contact Section */
         .contact-section {
             padding: 5rem 2rem;
@@ -421,6 +490,21 @@
                     <span id="page-info">Page 1 of 1</span>
                 </div>
                 <canvas id="pdf-canvas"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section" id="video">
+        <div class="video-container">
+            <div class="video-header">
+                <h2>YUKON Pitch Video</h2>
+                <p>Watch our presentation and learn more about our revolutionary data mining technology</p>
+            </div>
+            <div class="video-content">
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6gZeGb70VEI?si=eRgrlj8Id4smhF91" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </section>
